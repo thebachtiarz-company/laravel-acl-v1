@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament;
+namespace TheBachtiarz\ACL\Filament;
 
 class ClusterCall extends \TheBachtiarz\Admin\Filament\Settings\FilamentDiscoverClass
 {

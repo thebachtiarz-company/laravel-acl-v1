@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Helpers;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Helpers;
 
 use Filament\Forms\Components\Component;
 

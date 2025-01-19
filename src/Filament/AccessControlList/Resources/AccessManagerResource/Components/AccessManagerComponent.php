@@ -1,14 +1,14 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource\Components;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource\Components;
 
-use App\Libraries\MyACL\Filament\AccessControlList\Helpers\FormStateHelper;
-use App\Libraries\MyACL\Helpers\Models\AccessManagerModelHelper;
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
 use Filament\Forms;
 use Illuminate\Support\Str;
+use TheBachtiarz\ACL\Filament\AccessControlList\Helpers\FormStateHelper;
+use TheBachtiarz\ACL\Helpers\Models\AccessManagerModelHelper;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
 
 class AccessManagerComponent
 {

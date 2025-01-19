@@ -1,11 +1,7 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources;
 
-use App\Libraries\MyACL\Filament\AccessControlList;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\SourceAccessResource\Pages;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Models\SourceAccess;
 use Awcodes\TableRepeater;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -18,6 +14,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Illuminate\Support\HtmlString;
 use Illuminate\Support\Str;
+use TheBachtiarz\ACL\Filament\AccessControlList;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\SourceAccessResource\Pages;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Models\SourceAccess;
 
 class SourceAccessResource extends Resource
 {
@@ -132,7 +132,7 @@ class SourceAccessResource extends Resource
     public static function getRelations(): array
     {
         return [
-            \App\Libraries\MyACL\Filament\AccessControlList\Resources\SourceAccessResource\RelationManagers\AccessManagersRelationManager::class,
+            \TheBachtiarz\ACL\Filament\AccessControlList\Resources\SourceAccessResource\RelationManagers\AccessManagersRelationManager::class,
         ];
     }
 

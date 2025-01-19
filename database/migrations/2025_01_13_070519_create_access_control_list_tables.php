@@ -1,14 +1,14 @@
 <?php
 
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Models\UserAccessInterface;
-use App\Libraries\MyACL\Models\AccessManager;
-use App\Libraries\MyACL\Models\SourceAccess;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface;
+use TheBachtiarz\ACL\Models\AccessManager;
+use TheBachtiarz\ACL\Models\SourceAccess;
 use TheBachtiarz\OAuth\Models\AuthUser;
 
 return new class extends Migration

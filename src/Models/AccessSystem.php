@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Libraries\MyACL\Models;
+namespace TheBachtiarz\ACL\Models;
 
-use App\Libraries\MyACL\Helpers\Models\AccessSystemModelHelper;
-use App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
-use App\Libraries\MyACL\Models\Factory\AccessSystemFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use TheBachtiarz\ACL\Helpers\Models\AccessSystemModelHelper;
+use TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
+use TheBachtiarz\ACL\Models\Factory\AccessSystemFactory;
 use TheBachtiarz\Base\Models\AbstractModel;
 
 class AccessSystem extends AbstractModel implements AccessSystemInterface

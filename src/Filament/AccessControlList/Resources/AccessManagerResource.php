@@ -1,13 +1,7 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources;
 
-use App\Libraries\MyACL\Filament\AccessControlList;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource\Components\AccessManagerComponent;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource\Pages;
-use App\Libraries\MyACL\Helpers\Models\SourceAccessModelHelper;
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Models\AccessManager;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -15,6 +9,12 @@ use Filament\Support\Enums\FontFamily;
 use Filament\Support\Enums\FontWeight;
 use Filament\Tables;
 use Filament\Tables\Table;
+use TheBachtiarz\ACL\Filament\AccessControlList;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource\Components\AccessManagerComponent;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource\Pages;
+use TheBachtiarz\ACL\Helpers\Models\SourceAccessModelHelper;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Models\AccessManager;
 
 class AccessManagerResource extends Resource
 {
@@ -61,7 +61,7 @@ class AccessManagerResource extends Resource
             ->deferLoading()
             ->defaultGroup(
                 Tables\Grouping\Group::make(AccessManagerInterface::ATTRIBUTE_SOURCE_ACCESS_ID)->label('Source')
-                    ->getTitleFromRecordUsing(fn(\App\Libraries\MyACL\Models\AccessManager $model) => $model->sourceAccess()->get()->first()->getName()),
+                    ->getTitleFromRecordUsing(fn(\TheBachtiarz\ACL\Models\AccessManager $model) => $model->sourceAccess()->get()->first()->getName()),
             )
             ->columns([
                 Tables\Columns\TextColumn::make(AccessManagerInterface::ATTRIBUTE_CODE)->label('Code')

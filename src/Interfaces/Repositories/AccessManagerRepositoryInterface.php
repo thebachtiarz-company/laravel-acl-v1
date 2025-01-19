@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Interfaces\Repositories;
+namespace TheBachtiarz\ACL\Interfaces\Repositories;
 
 use TheBachtiarz\Base\Interfaces\Repositories\RepositoryInterface;
 
@@ -10,15 +10,15 @@ interface AccessManagerRepositoryInterface extends RepositoryInterface
      * Find by code
      *
      * @param string $code
-     * @return \App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface|null
+     * @return \TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface|null
      */
-    public function findByCode(string $code): ?\App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
+    public function findByCode(string $code): ?\TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
 
     /**
      * Get by source
      *
-     * @param \App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface $source
+     * @param \TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface $source
      * @return \Illuminate\Database\Eloquent\Collection
      */
-    public function getBySource(\App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface $source): \Illuminate\Database\Eloquent\Collection;
+    public function getBySource(\TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface $source): \Illuminate\Database\Eloquent\Collection;
 }

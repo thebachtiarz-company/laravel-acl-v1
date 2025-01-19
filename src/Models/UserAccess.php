@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Libraries\MyACL\Models;
+namespace TheBachtiarz\ACL\Models;
 
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Models\UserAccessInterface;
-use App\Libraries\MyACL\Models\Factory\UserAccessFactory;
-use TheBachtiarz\Base\Models\AbstractModel;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface;
+use TheBachtiarz\ACL\Models\Factory\UserAccessFactory;
+use TheBachtiarz\Base\Models\AbstractModel;
 use TheBachtiarz\OAuth\Interfaces\Models\AuthUserInterface;
 use TheBachtiarz\OAuth\Models\AuthUser;
 

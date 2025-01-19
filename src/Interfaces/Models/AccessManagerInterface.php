@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Libraries\MyACL\Interfaces\Models;
+namespace TheBachtiarz\ACL\Interfaces\Models;
 
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use TheBachtiarz\Base\Interfaces\Models\ModelInterface;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 interface AccessManagerInterface extends ModelInterface
 {

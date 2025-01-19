@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Libraries\MyACL\Helpers\Models;
+namespace TheBachtiarz\ACL\Helpers\Models;
 
-use App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
 use Illuminate\Support\Str;
+use TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
 
 class AccessSystemModelHelper
 {

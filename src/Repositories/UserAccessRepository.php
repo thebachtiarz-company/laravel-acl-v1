@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Libraries\MyACL\Repositories;
+namespace TheBachtiarz\ACL\Repositories;
 
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Models\UserAccessInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\UserAccessRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\UserAccessRepositoryInterface;
 use TheBachtiarz\Base\Repositories\AbstractRepository;
 use TheBachtiarz\OAuth\Interfaces\Models\AuthUserInterface;
 

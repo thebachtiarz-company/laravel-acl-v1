@@ -1,22 +1,22 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources;
 
-use App\Libraries\MyACL\Filament\AccessControlList;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\UserAccessResource\Pages;
-use App\Libraries\MyACL\Helpers\Models\AccessManagerModelHelper;
-use App\Libraries\MyACL\Helpers\Models\SourceAccessModelHelper;
-use App\Libraries\MyACL\Helpers\Models\UserModelHelper;
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Models\UserAccessInterface;
-use App\Libraries\MyACL\Models\UserAccess;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Support\Enums\FontFamily;
 use Filament\Tables;
 use Filament\Tables\Table;
+use TheBachtiarz\ACL\Filament\AccessControlList;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\UserAccessResource\Pages;
+use TheBachtiarz\ACL\Helpers\Models\AccessManagerModelHelper;
+use TheBachtiarz\ACL\Helpers\Models\SourceAccessModelHelper;
+use TheBachtiarz\ACL\Helpers\Models\UserModelHelper;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface;
+use TheBachtiarz\ACL\Models\UserAccess;
 
 class UserAccessResource extends Resource
 {
@@ -77,7 +77,7 @@ class UserAccessResource extends Resource
             ->deferLoading()
             ->defaultGroup(
                 Tables\Grouping\Group::make(UserAccessInterface::ATTRIBUTE_USER_ID)->label('User')
-                    ->getTitleFromRecordUsing(fn(\App\Libraries\MyACL\Models\UserAccess $model) => $model->user()->get()->first()->getIdentifier()),
+                    ->getTitleFromRecordUsing(fn(\TheBachtiarz\ACL\Models\UserAccess $model) => $model->user()->get()->first()->getIdentifier()),
             )
             ->columns([
                 Tables\Columns\TextColumn::make(sprintf('sourceAccess.%s', SourceAccessInterface::ATTRIBUTE_NAME))

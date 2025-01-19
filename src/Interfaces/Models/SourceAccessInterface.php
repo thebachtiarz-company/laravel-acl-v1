@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Libraries\MyACL\Interfaces\Models;
+namespace TheBachtiarz\ACL\Interfaces\Models;
 
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use TheBachtiarz\Base\Interfaces\Models\ModelInterface;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 interface SourceAccessInterface extends ModelInterface
 {

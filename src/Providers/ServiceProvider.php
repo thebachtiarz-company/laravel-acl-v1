@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Providers;
+namespace TheBachtiarz\ACL\Providers;
 
 class ServiceProvider extends \Illuminate\Support\ServiceProvider
 {
@@ -9,20 +9,20 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
      */
     public function register(): void
     {
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface::class, concrete: \App\Libraries\MyACL\Models\AccessManager::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface::class, concrete: \App\Libraries\MyACL\Models\AccessSystem::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface::class, concrete: \App\Libraries\MyACL\Models\SourceAccess::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Models\UserAccessInterface::class, concrete: \App\Libraries\MyACL\Models\UserAccess::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface::class, concrete: \TheBachtiarz\ACL\Models\AccessManager::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface::class, concrete: \TheBachtiarz\ACL\Models\AccessSystem::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface::class, concrete: \TheBachtiarz\ACL\Models\SourceAccess::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface::class, concrete: \TheBachtiarz\ACL\Models\UserAccess::class);
 
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Repositories\AccessManagerRepositoryInterface::class, concrete: \App\Libraries\MyACL\Repositories\AccessManagerRepository::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Repositories\AccessSystemRepositoryInterface::class, concrete: \App\Libraries\MyACL\Repositories\AccessSystemRepository::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Repositories\SourceAccessRepositoryInterface::class, concrete: \App\Libraries\MyACL\Repositories\SourceAccessRepository::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Repositories\UserAccessRepositoryInterface::class, concrete: \App\Libraries\MyACL\Repositories\UserAccessRepository::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Repositories\AccessManagerRepositoryInterface::class, concrete: \TheBachtiarz\ACL\Repositories\AccessManagerRepository::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Repositories\AccessSystemRepositoryInterface::class, concrete: \TheBachtiarz\ACL\Repositories\AccessSystemRepository::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Repositories\SourceAccessRepositoryInterface::class, concrete: \TheBachtiarz\ACL\Repositories\SourceAccessRepository::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Repositories\UserAccessRepositoryInterface::class, concrete: \TheBachtiarz\ACL\Repositories\UserAccessRepository::class);
 
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Services\AccessManagerServiceInterface::class, concrete: \App\Libraries\MyACL\Services\AccessManagerService::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Services\AccessSystemServiceInterface::class, concrete: \App\Libraries\MyACL\Services\AccessSystemService::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Services\SourceAccessServiceInterface::class, concrete: \App\Libraries\MyACL\Services\SourceAccessService::class);
-        $this->app->bind(abstract: \App\Libraries\MyACL\Interfaces\Services\UserAccessServiceInterface::class, concrete: \App\Libraries\MyACL\Services\UserAccessService::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Services\AccessManagerServiceInterface::class, concrete: \TheBachtiarz\ACL\Services\AccessManagerService::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Services\AccessSystemServiceInterface::class, concrete: \TheBachtiarz\ACL\Services\AccessSystemService::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Services\SourceAccessServiceInterface::class, concrete: \TheBachtiarz\ACL\Services\SourceAccessService::class);
+        $this->app->bind(abstract: \TheBachtiarz\ACL\Interfaces\Services\UserAccessServiceInterface::class, concrete: \TheBachtiarz\ACL\Services\UserAccessService::class);
     }
 
     /**

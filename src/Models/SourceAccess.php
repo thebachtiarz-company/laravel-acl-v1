@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Libraries\MyACL\Models;
+namespace TheBachtiarz\ACL\Models;
 
-use App\Libraries\MyACL\Helpers\Models\SourceAccessModelHelper;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Models\Factory\SourceAccessFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use TheBachtiarz\ACL\Helpers\Models\SourceAccessModelHelper;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Models\Factory\SourceAccessFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use TheBachtiarz\Base\Models\AbstractModel;
 
 class SourceAccess extends AbstractModel implements SourceAccessInterface

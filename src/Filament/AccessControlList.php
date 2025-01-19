@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament;
+namespace TheBachtiarz\ACL\Filament;
 
 class AccessControlList extends \Filament\Clusters\Cluster
 {

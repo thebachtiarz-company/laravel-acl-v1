@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Libraries\MyACL\Gates;
+namespace TheBachtiarz\ACL\Gates;
 
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Models\UserAccessInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\AccessSystemRepositoryInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\UserAccessRepositoryInterface;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Support\Facades\Auth;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\AccessSystemRepositoryInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\UserAccessRepositoryInterface;
 use TheBachtiarz\Admin\Helpers\Model\AuthUserModelHelper;
 use TheBachtiarz\OAuth\Interfaces\Models\AuthUserInterface;
 
@@ -28,7 +28,7 @@ class AccessGate
     /**
      * User access collection
      *
-     * @var Collection<\App\Libraries\MyACL\Interfaces\Models\UserAccessInterface>
+     * @var Collection<\TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface>
      */
     protected static Collection $userAccessCollection;
 

@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\UserAccessResource\Pages;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\UserAccessResource\Pages;
 
-use App\Libraries\MyACL\DTO\Services\UserAccessMutationInputDTO;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\UserAccessResource;
-use App\Libraries\MyACL\Interfaces\Models\UserAccessInterface;
-use App\Libraries\MyACL\Interfaces\Services\UserAccessServiceInterface;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\CreateRecord;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
+use TheBachtiarz\ACL\DTO\Services\UserAccessMutationInputDTO;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\UserAccessResource;
+use TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Services\UserAccessServiceInterface;
 
 class CreateUserAccess extends CreateRecord
 {

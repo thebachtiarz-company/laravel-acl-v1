@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Libraries\MyACL\Services;
+namespace TheBachtiarz\ACL\Services;
 
-use App\Libraries\MyACL\DTO\Services\AccessManagerMutationInputDTO;
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\AccessManagerRepositoryInterface;
-use App\Libraries\MyACL\Interfaces\Services\AccessManagerServiceInterface;
+use TheBachtiarz\ACL\DTO\Services\AccessManagerMutationInputDTO;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\AccessManagerRepositoryInterface;
+use TheBachtiarz\ACL\Interfaces\Services\AccessManagerServiceInterface;
 use TheBachtiarz\Base\DTOs\Services\ResponseDataDTO;
 use TheBachtiarz\Base\Enums\Services\ResponseConditionEnum;
 use TheBachtiarz\Base\Enums\Services\ResponseHttpCodeEnum;

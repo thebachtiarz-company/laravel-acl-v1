@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Libraries\MyACL\Helpers\Models;
+namespace TheBachtiarz\ACL\Helpers\Models;
 
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\AccessManagerRepositoryInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
 use Illuminate\Support\Str;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\AccessManagerRepositoryInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
 
 class AccessManagerModelHelper
 {

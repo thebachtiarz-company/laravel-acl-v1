@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\SourceAccessResource\Pages;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\SourceAccessResource\Pages;
 
-use App\Libraries\MyACL\DTO\Services\SourceAccessMutationInputDTO;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\SourceAccessResource;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Services\SourceAccessServiceInterface;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\CreateRecord;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use TheBachtiarz\ACL\DTO\Services\SourceAccessMutationInputDTO;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\SourceAccessResource;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Services\SourceAccessServiceInterface;
 
 class CreateSourceAccess extends CreateRecord
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Interfaces\Models;
+namespace TheBachtiarz\ACL\Interfaces\Models;
 
 use TheBachtiarz\Base\Interfaces\Models\ModelInterface;
 

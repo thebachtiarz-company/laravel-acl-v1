@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\UserAccessResource\Pages;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\UserAccessResource\Pages;
 
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\UserAccessResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\UserAccessResource;
 
 class EditUserAccess extends EditRecord
 {

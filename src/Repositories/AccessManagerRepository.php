@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Libraries\MyACL\Repositories;
+namespace TheBachtiarz\ACL\Repositories;
 
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\AccessManagerRepositoryInterface;
 use Illuminate\Database\Eloquent\Collection;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\AccessManagerRepositoryInterface;
 use TheBachtiarz\Base\Repositories\AbstractRepository;
 
 class AccessManagerRepository extends AbstractRepository implements AccessManagerRepositoryInterface

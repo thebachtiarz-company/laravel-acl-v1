@@ -1,11 +1,7 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\SourceAccessResource\RelationManagers;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\SourceAccessResource\RelationManagers;
 
-use App\Libraries\MyACL\DTO\Services\AccessManagerMutationInputDTO;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource\Components\AccessManagerComponent;
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Services\AccessManagerServiceInterface;
 use Filament\Forms\Form;
 use Filament\Notifications\Notification;
 use Filament\Resources\RelationManagers\RelationManager;
@@ -14,6 +10,10 @@ use Filament\Support\Enums\FontWeight;
 use Filament\Support\Enums\MaxWidth;
 use Filament\Tables;
 use Filament\Tables\Table;
+use TheBachtiarz\ACL\DTO\Services\AccessManagerMutationInputDTO;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource\Components\AccessManagerComponent;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Services\AccessManagerServiceInterface;
 
 class AccessManagersRelationManager extends RelationManager
 {
@@ -46,7 +46,7 @@ class AccessManagersRelationManager extends RelationManager
             ->headerActions([
                 Tables\Actions\CreateAction::make()->label('Add New Access Manager')->icon('heroicon-c-plus')
                     ->modalWidth(MaxWidth::SixExtraLarge)
-                    ->form(fn(Form $form) => \App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource::form($form))
+                    ->form(fn(Form $form) => \TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource::form($form))
                     ->fillForm(function () {
                         $data = [];
 
@@ -81,7 +81,7 @@ class AccessManagersRelationManager extends RelationManager
             ->actions([
                 Tables\Actions\EditAction::make()
                     ->modalWidth(MaxWidth::SixExtraLarge)
-                    ->form(fn(Form $form) => \App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource::form($form))
+                    ->form(fn(Form $form) => \TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource::form($form))
                     ->fillForm(function (AccessManagerInterface $record) {
                         $data = $record->{'toArray'}();
 

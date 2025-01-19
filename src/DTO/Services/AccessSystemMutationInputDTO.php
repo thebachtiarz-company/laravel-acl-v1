@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\DTO\Services;
+namespace TheBachtiarz\ACL\DTO\Services;
 
 use TheBachtiarz\Base\DTOs\AbstractDTO;
 

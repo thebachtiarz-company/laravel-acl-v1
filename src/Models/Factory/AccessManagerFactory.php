@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Libraries\MyACL\Models\Factory;
+namespace TheBachtiarz\ACL\Models\Factory;
 
-use App\Libraries\MyACL\Models\AccessManager;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
+use TheBachtiarz\ACL\Models\AccessManager;
 
 /**
  * @extends Factory<AccessManager>

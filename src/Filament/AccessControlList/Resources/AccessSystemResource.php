@@ -1,12 +1,7 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources;
 
-use App\Libraries\MyACL\Filament\AccessControlList;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessSystemResource\Components\AccessSystemComponent;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessSystemResource\Pages;
-use App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
-use App\Libraries\MyACL\Models\AccessSystem;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -16,6 +11,11 @@ use Filament\Tables;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use TheBachtiarz\ACL\Filament\AccessControlList;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessSystemResource\Components\AccessSystemComponent;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessSystemResource\Pages;
+use TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
+use TheBachtiarz\ACL\Models\AccessSystem;
 
 class AccessSystemResource extends Resource
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Helpers\Models;
+namespace TheBachtiarz\ACL\Helpers\Models;
 
 use TheBachtiarz\OAuth\Helpers\AuthUserHelper;
 use TheBachtiarz\OAuth\Models\AuthUser;

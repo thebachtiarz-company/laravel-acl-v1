@@ -1,16 +1,16 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource\Pages;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource\Pages;
 
-use App\Libraries\MyACL\DTO\Services\AccessManagerMutationInputDTO;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource\Components\AccessManagerComponent;
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Services\AccessManagerServiceInterface;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\CreateRecord;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
+use TheBachtiarz\ACL\DTO\Services\AccessManagerMutationInputDTO;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource\Components\AccessManagerComponent;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Services\AccessManagerServiceInterface;
 
 class CreateAccessManager extends CreateRecord
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource\Pages;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource\Pages;
 
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessManagerResource;
 use Filament\Actions;
 use Filament\Resources\Pages\ListRecords;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerResource;
 
 class ListAccessManagers extends ListRecords
 {

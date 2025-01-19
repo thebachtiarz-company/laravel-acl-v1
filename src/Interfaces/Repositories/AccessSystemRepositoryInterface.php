@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Interfaces\Repositories;
+namespace TheBachtiarz\ACL\Interfaces\Repositories;
 
 use TheBachtiarz\Base\Interfaces\Repositories\RepositoryInterface;
 
@@ -10,23 +10,23 @@ interface AccessSystemRepositoryInterface extends RepositoryInterface
      * Find by code
      *
      * @param string $code
-     * @return \App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface|null
+     * @return \TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface|null
      */
-    public function findByCode(string $code): ?\App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
+    public function findByCode(string $code): ?\TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
 
     /**
      * Find by address
      *
      * @param string $address
-     * @return \App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface|null
+     * @return \TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface|null
      */
-    public function findByAddress(string $address): ?\App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
+    public function findByAddress(string $address): ?\TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
 
     /**
      * Find by address or create new
      *
      * @param string $address
-     * @return \App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface
+     * @return \TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface
      */
-    public function findAddressOrCreate(string $address): \App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
+    public function findAddressOrCreate(string $address): \TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
 }

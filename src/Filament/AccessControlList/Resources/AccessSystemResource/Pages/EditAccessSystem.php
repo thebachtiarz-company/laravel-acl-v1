@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessSystemResource\Pages;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessSystemResource\Pages;
 
-use App\Libraries\MyACL\DTO\Services\AccessSystemMutationInputDTO;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessSystemResource;
-use App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessSystemResource\Components\AccessSystemComponent;
-use App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
-use App\Libraries\MyACL\Interfaces\Services\AccessSystemServiceInterface;
 use Filament\Actions;
 use Filament\Notifications\Notification;
 use Filament\Resources\Pages\EditRecord;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
+use TheBachtiarz\ACL\DTO\Services\AccessSystemMutationInputDTO;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessSystemResource;
+use TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessSystemResource\Components\AccessSystemComponent;
+use TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
+use TheBachtiarz\ACL\Interfaces\Services\AccessSystemServiceInterface;
 
 class EditAccessSystem extends EditRecord
 {

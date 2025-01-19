@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Libraries\MyACL\Models;
+namespace TheBachtiarz\ACL\Models;
 
-use App\Libraries\MyACL\Helpers\Models\AccessManagerModelHelper;
-use App\Libraries\MyACL\Interfaces\Models\AccessManagerInterface;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Models\Factory\AccessManagerFactory;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use TheBachtiarz\ACL\Helpers\Models\AccessManagerModelHelper;
+use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Models\Factory\AccessManagerFactory;
 use TheBachtiarz\Base\Models\AbstractModel;
 
 class AccessManager extends AbstractModel implements AccessManagerInterface

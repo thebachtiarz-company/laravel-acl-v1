@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Libraries\MyACL\Interfaces\Repositories;
+namespace TheBachtiarz\ACL\Interfaces\Repositories;
 
 use TheBachtiarz\Base\Interfaces\Repositories\RepositoryInterface;
 
@@ -10,7 +10,7 @@ interface SourceAccessRepositoryInterface extends RepositoryInterface
      * Find by code
      *
      * @param string $code
-     * @return \App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface|null
+     * @return \TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface|null
      */
-    public function findByCode(string $code): ?\App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
+    public function findByCode(string $code): ?\TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
 }

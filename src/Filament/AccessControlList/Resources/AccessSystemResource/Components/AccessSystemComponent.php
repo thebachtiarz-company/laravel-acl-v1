@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Libraries\MyACL\Filament\AccessControlList\Resources\AccessSystemResource\Components;
+namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessSystemResource\Components;
 
-use App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
 use Filament\Forms;
 use Illuminate\Support\Str;
+use TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
 
 class AccessSystemComponent
 {

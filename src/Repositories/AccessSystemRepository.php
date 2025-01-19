@@ -1,11 +1,11 @@
 <?php
 
-namespace App\Libraries\MyACL\Repositories;
+namespace TheBachtiarz\ACL\Repositories;
 
-use App\Libraries\MyACL\Interfaces\Models\AccessSystemInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\AccessSystemRepositoryInterface;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use TheBachtiarz\ACL\Interfaces\Models\AccessSystemInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\AccessSystemRepositoryInterface;
 use TheBachtiarz\Base\Repositories\AbstractRepository;
 
 class AccessSystemRepository extends AbstractRepository implements AccessSystemRepositoryInterface

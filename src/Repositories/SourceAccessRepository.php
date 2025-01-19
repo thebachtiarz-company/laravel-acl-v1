@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Libraries\MyACL\Repositories;
+namespace TheBachtiarz\ACL\Repositories;
 
-use App\Libraries\MyACL\Interfaces\Models\SourceAccessInterface;
-use App\Libraries\MyACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
+use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
+use TheBachtiarz\ACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
 use TheBachtiarz\Base\Repositories\AbstractRepository;
 
 class SourceAccessRepository extends AbstractRepository implements SourceAccessRepositoryInterface
