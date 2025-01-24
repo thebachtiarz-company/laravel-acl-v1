@@ -4,11 +4,13 @@ namespace TheBachtiarz\ACL\Filament\AccessControlList\Resources\AccessManagerRes
 
 use Filament\Forms;
 use Illuminate\Support\Str;
+use TheBachtiarz\ACL\DTO\Services\AccessManagerMutationInputDTO;
 use TheBachtiarz\ACL\Filament\AccessControlList\Helpers\FormStateHelper;
 use TheBachtiarz\ACL\Helpers\Models\AccessManagerModelHelper;
 use TheBachtiarz\ACL\Interfaces\Models\AccessManagerInterface;
 use TheBachtiarz\ACL\Interfaces\Models\SourceAccessInterface;
 use TheBachtiarz\ACL\Interfaces\Repositories\SourceAccessRepositoryInterface;
+use TheBachtiarz\ACL\Interfaces\Services\AccessManagerServiceInterface;
 
 class AccessManagerComponent
 {
@@ -69,6 +71,9 @@ class AccessManagerComponent
                             $entity = AccessManagerModelHelper::findByCode($code);
 
                             if ($entity) {
+                                $set(sprintf('../%s', static::$abilities), [
+                                    static::$aclEntity => $code,
+                                ]);
                                 $set(sprintf('../%s', static::$abilities), FormStateHelper::merge($component, static::decode([
                                     AccessManagerInterface::ATTRIBUTE_SOURCE_ACCESS_ID => $source->getId(),
                                     AccessManagerInterface::ATTRIBUTE_ACCESS => $entity->getAccess(),
@@ -102,16 +107,16 @@ class AccessManagerComponent
     {
         if ($data[static::$needCustomAcl]) {
             $source = app(SourceAccessRepositoryInterface::class)->findByCode($sourceCode);
-            $data[AccessManagerInterface::ATTRIBUTE_SOURCE_ACCESS_ID] = $source;
+            $data[AccessManagerInterface::ATTRIBUTE_SOURCE_ACCESS_ID] = $source->getId();
             $data[static::$abilities] = $data;
 
-            // $process = app(AclManagerServiceInterface::class)->createOrUpdate(new AclManagerMutationInputDTO(
-            //     source: $source,
-            //     name: $data[AccessManagerInterface::ATTRIBUTE_NAME],
-            //     access: static::encode($data),
-            // ));
+            $process = app(AccessManagerServiceInterface::class)->createOrUpdate(new AccessManagerMutationInputDTO(
+                sourceId: $source->getId(),
+                name: $data[AccessManagerInterface::ATTRIBUTE_NAME],
+                access: static::encode($data),
+            ));
 
-            // $data[static::$aclEntity] = $process->model->getCode();
+            $data[static::$aclEntity] = $process->model->getCode();
         }
     }
 

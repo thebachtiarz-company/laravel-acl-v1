@@ -56,6 +56,25 @@ class AccessManagerModelHelper
     }
 
     /**
+     * Get list by source code
+     *
+     * @param string $sourceCode
+     * @return array
+     */
+    public static function getListOptionBySourceCode(string $sourceCode): array
+    {
+        $source = app(SourceAccessRepositoryInterface::class)->throwIfNullEntity(false)->findByCode($sourceCode);
+
+        if (!$source) {
+            return [];
+        }
+
+        return static::getBySource($source)
+            ->pluck(AccessManagerInterface::ATTRIBUTE_NAME, app(AccessManagerInterface::class)->getPrimaryKeyAttribute())
+            ->toArray();
+    }
+
+    /**
      * Get by source
      *
      * @param SourceAccessInterface $source

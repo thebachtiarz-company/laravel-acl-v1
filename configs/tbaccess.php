@@ -13,5 +13,17 @@ return [
     | ===> only need to call 'first_gate' into form component.
     |
     */
-    // 'first_gate' => 'SOA1SDfsgsd585dfSDFsfd',
+    // 'first_source' => 'SOA1SDfsgsd585dfSDFsfd',
+    // 'second_source' => 'SOA1SDfsgsd585dfSDFsfd',
+    // 'third_source' => 'SOA1SDfsgsd585dfSDFsfd',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Admin Ignore
+    |--------------------------------------------------------------------------
+    |
+    | Define is listed admin will ignore from access control.
+    |
+    */
+    'admin_ignore' => true,
 ];

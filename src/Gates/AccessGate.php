@@ -11,6 +11,7 @@ use TheBachtiarz\ACL\Interfaces\Models\UserAccessInterface;
 use TheBachtiarz\ACL\Interfaces\Repositories\AccessSystemRepositoryInterface;
 use TheBachtiarz\ACL\Interfaces\Repositories\UserAccessRepositoryInterface;
 use TheBachtiarz\Admin\Helpers\Model\AuthUserModelHelper;
+use TheBachtiarz\Config\Helpers\ConfigHelper;
 use TheBachtiarz\OAuth\Interfaces\Models\AuthUserInterface;
 
 class AccessGate
@@ -60,7 +61,7 @@ class AccessGate
 
         static::userAuthorize();
 
-        if (in_array(static::$user->getIdentifier(), AuthUserModelHelper::getAdminList())) {
+        if (in_array(static::$user->getIdentifier(), AuthUserModelHelper::getAdminList()) && ConfigHelper::config('tbaccess.admin_ignore')) {
             return;
         }
 
